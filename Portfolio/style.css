@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* width: 100%; */
+    height: 65px;
+    padding: 0px 40px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color: rgb(245, 245, 212);      /* bg color to navbar */
+    border:1px solid rgb(124, 17, 17);       /* color to navbar border*/
+}
+
+
+.logo img{
+    width: 85%;
+}
+
+.content{
+    display: flex;
+    column-gap: 50px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #0c080b;       /* color to nav bar button*/
+}
+
+/* home section */
+.container{
+    position: relative;
+    top: 65px;
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+}
+
+.home-container .img, .home-container .home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.home-content h1{
+    font-size: 40px;
+    line-height: 80px;
+
+}
+
+.home-content span{
+    color: #f10c0c;         /color to my name/
+}
+
+
+.home-container .img img{
+    width: 80%;                 /* size to image neighbour to my name */
+}
+
+/* about container */
+.about-container{
+    display: flex;
+    justify-content: space-around;  /* to give space arount about me section and img added to that section */
+    padding: 4% 0px;
+    background-color: #bed8ff;   /* color to about me content */
+}
+
+/* .about-container .frame{
+    width: 300px;
+    padding:10px 10px;
+    background-color: #bed8ff;
+} */
+
+.about-container .frame img{
+    width:400px;
+    height:400px;
+}
+
+.about-container .about-content{
+    width: 40%;
+}
+
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* skills section */
+.skills, .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 0px;
+}
+
+.skill-items, .contact-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2% 0px;
+    flex-wrap: wrap;
+    gap: 20px 1px;
+}
+
+.skill-items .item{ 
+    border: 1px solid #bed8ff;               /* color to border of skill section */
+    padding: 10px 25px;
+    color: #007cff;                        /* color to skill font text */
+    border-radius: 8px;
+    border-bottom: 5px solid #007cff;     /* color to border bottom of skill section */
+    width: 20%;
+}
+
+.contact-items .item{
+    border:1px solid rgb(124, 17, 17);         /* color to border of contact section */
+    border-radius: 7px;
+    background-color: bisque;
+    color: orangered;                          /* color to font of contact text */
+    padding: 10px 25px;
+    border-bottom: 5px solid rgb(175, 51, 51);    /* color of border bottom */
+}
+
+.nav-items:hover{
+    background-color: grey;                  /* color to nevbar item at time of hover */
+}
+
+            /* -------------- CSS OVER -------------------  */
+
+        /* ----------screen-size 320 to 480---------- */
+
+@media screen and (min-width:320px)and (max-width:480px){
+    .navbar{
+        width:100%;
+        height: 50px;
+        padding: 0px 28px;
+        background-color: rgb(245, 245, 212);      /* bg color to navbar */
+        border:1px solid rgb(124, 17, 17); 
+    }
+    .content {
+        display: flex;
+        column-gap: 8px;
+    }
+    .logo img {
+        width: 60%;
+    }
+    .home-container .img img{
+        height: 150px;
+        width: 150px;
+    }
+    .home-content h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .home-content h2 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #bed8ff;
+    }
+    .about-container .frame img{
+        width:90%;
+        height:90%;
+        padding:4% 10px;
+        margin:17px;
+    }
+    .about-content {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding:4% 0px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .p{
+        text-align: center;
+    }
+    .about-content .title {
+        font-size: 12px;
+    }
+    .about-container .about-content {
+        width: 99.5%;
+    }
+    .skill-items .item {
+        border: 2px solid #bed8ff;
+        padding: 7px 23px;
+        color: #007cff;
+        border-radius: 10px;
+        border-bottom: 5px solid #007cff;
+        width: 70%;
+    }
+    .contact-items .item {
+        border: 1px solid rgb(124, 17, 17);
+        border-radius: 10px;
+        background-color: bisque;
+        color: orangered;
+        padding: 7px 23px;
+        border-bottom: 5px solid rgb(175, 51, 51);
+        width:78%;
+    }
+}
+
+/* -------------------**********over for 481 to 768*************-------------------- */
+
+       /* ----------screen-size 481 to 768---------- */
+@media screen and (min-width:481px)and (max-width:768px){
+    .navbar{
+        width:100%;
+        height: 70px;
+        padding: 0px 30px;
+        background-color: rgb(245, 245, 212);      /* bg color to navbar */
+        border:1px solid rgb(124, 17, 17); 
+    }
+    .content {
+        display: flex;
+        column-gap: 10px;
+    }
+    .logo img {
+        width: 65%;
+    }
+    .home-content h1, h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .home-content span{
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .home-container .img img{
+        height: 250px;
+        width: 250px;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #bed8ff;
+    }
+    .about-container .frame img {
+        width: 79%;
+        height: 60%;
+        padding: 0% 0px;
+        margin: 60px;
+    }
+    .about-content .title {
+        text-align: center;
+    }
+    
+    .about-container .about-content {
+        width: 98%;
+    }
+    .p{
+        text-align: center;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .skills, .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8% 0px;
+    }
+    .skill-items .item {
+        border: 1px solid #bed8ff;
+        padding: 15px 30px;
+        color: #007cff;
+        border-radius: 8px;
+        border-bottom: 5px solid #007cff;
+        width: 44%;
+    }
+    .contact-items .item {
+        border: 1px solid rgb(124, 17, 17);
+        border-radius: 7px;
+        background-color: bisque;
+        color: orangered;
+        width: 77%;
+        padding: 15px 30px;
+        border-bottom: 5px solid rgb(175, 51, 51);
+    }
+}
+
+/* -------------------**********over for 481 to 768*************-------------------- */
+
+     /* ----------screen-size 769 to 1024---------- */
+
+     @media screen and (min-width:769px)and (max-width:1024px){
+        .navbar{
+            width:100%;
+            height: 76px;
+            padding: 0px 18px;
+            background-color: rgb(245, 245, 212);      /* bg color to navbar */
+            border:1px solid rgb(124, 17, 17); 
+        }
+        .home-content h1 {
+            font-size: 38px;
+            line-height: 60px;
+        }
+        .about-container .about-content {
+            width: 42%;
+        }
+        .about-content .title {
+            text-align: center;
+        }
+        h1{
+            font-size: 35px;
+        }
+        .skill-items .item {
+            border: 2px solid #bed8ff;
+            padding: 10px 25px;
+            color: #007cff;
+            border-radius: 8px;
+            border-bottom: 5px solid #007cff;
+            width: 30%;
+        }
+        .contact-items .item {
+            border: 1px solid rgb(124, 17, 17);
+            border-radius: 9px;
+            background-color: bisque;
+            color: orangered;
+            padding: 8px 25px;
+            width: 32%;
+            border-bottom: 5px solid rgb(175, 51, 51);
+        }
+    }
